@@ -14,4 +14,11 @@ class Intervention extends Model implements Auditable
     {
         return $this->hasOne('App\Programme', 'progCode', 'progID' );
     }
+
+    public function generateTags(): array
+    {
+        return [
+            'Intervention'
+        ];
+    }
 }

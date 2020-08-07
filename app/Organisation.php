@@ -15,4 +15,11 @@ class Organisation extends Model implements Auditable
     {
         return $this->hasMany('App\Programme', 'orgID', 'orgCode' );
     }
+
+    public function generateTags(): array
+    {
+        return [
+            'Organisation'
+        ];
+    }
 }

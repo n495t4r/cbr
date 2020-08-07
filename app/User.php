@@ -51,4 +51,11 @@ class User extends Authenticatable implements Auditable
     {
         return $query->whereNotNull('email_verified_at');
     }
+
+    public function generateTags(): array
+    {
+        return [
+            'User'
+        ];
+    }
 }

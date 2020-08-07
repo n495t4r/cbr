@@ -237,9 +237,9 @@ return [
             'topnav' => true,
         ],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Dashboard',
+            'url'  => 'admin',
+            'icon' => 'fa fa-tachometer',
         ],
         // [
         //     'text'        => 'pages',
@@ -290,7 +290,7 @@ return [
         ],
         [
             'text' => 'Audit Trail',
-            'url'  => '#',
+            'url'  => 'admin/audit',
             'icon' => 'fas fa-fw fa-bars',
         ],
     ],

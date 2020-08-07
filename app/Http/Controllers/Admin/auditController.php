@@ -14,8 +14,7 @@ class auditController extends Controller
      */
     public function index()
     {
-        $audits = \OwenIt\Auditing\Models\Audit::with('user')
-        ->get();
+        $audits = \OwenIt\Auditing\Models\Audit::with('user')->latest()->get();;
 
         // dd($audits);
         return view('admin.audit', ['audits' => $audits]);  

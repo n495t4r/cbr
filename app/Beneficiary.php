@@ -39,4 +39,11 @@ class Beneficiary extends Model implements Auditable
     public function getProgrammeRelation(){
         return $this->hasOne('App\Programme', 'progCode', 'progID');
     }
+
+    public function generateTags(): array
+    {
+        return [
+            'Beneficiary'
+        ];
+    }
 }

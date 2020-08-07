@@ -22,4 +22,11 @@ class Programme extends Model implements Auditable
     {
         return $this->hasMany('App\Beneficiary', 'progID', 'progCode' );
     }
+
+    public function generateTags(): array
+    {
+        return [
+            'Programme'
+        ];
+    }
 }

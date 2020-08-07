@@ -35,10 +35,11 @@ Auth::routes();
 
 Route::get('/admin', function() {
    
-    return view('home');
+    return view('dashboard');
     
 
-})->name('home')->middleware('auth');
+})->name('dashboard')->middleware('auth');
+
 
 Route::get('/admin/settings', function() {
     return view('admin.settings');
